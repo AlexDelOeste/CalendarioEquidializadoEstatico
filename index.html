@@ -1,11 +1,789 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Conversor de fechas del calendario gregoriano al calendario equidializado</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Hola Mundo</h1>
-  </div>
+    <h1>Conversor de fechas</h1>
+    <h2>Calendario Gregoriano a Sistema Equidializado</h2>
+
+    <form action="#" method="get" onsubmit="convertirFecha(); return false;">
+        <label for="fecha">Selecciona una fecha en este viejo calendario gregoriano:</label>
+        <input type="date" id="fecha" name="fecha">
+        <input type="submit" value="Convertir esta fecha">
+    </form>
+
+    <p id="resultado"></p>
+    <h3>Aquí puedes visualizar el calendario equidializado 2024</h3>
+    <div class="table-container">
+    <table border="1" class="table">
+        <tr>
+            <th colspan="7">Enero</th>
+        </tr>
+        <tr>
+            <th>Lu</th>
+            <th>Ma</th>
+            <th>Mi</th>
+            <th>Ju</th>
+            <th>Vi</th>
+            <th>Sa</th>
+            <th>Do</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+    </table>
+    <table border="1" class="table">
+        <tr>
+            <th colspan="7">Febrero</th>
+        </tr>
+        <tr>
+            <th>Lu</th>
+            <th>Ma</th>
+            <th>Mi</th>
+            <th>Ju</th>
+            <th>Vi</th>
+            <th>Sa</th>
+            <th>Do</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+    </table>
+    <table border="1" class="table">
+        <tr>
+            <th colspan="7">Marzo</th>
+        </tr>
+        <tr>
+            <th>Lu</th>
+            <th>Ma</th>
+            <th>Mi</th>
+            <th>Ju</th>
+            <th>Vi</th>
+            <th>Sa</th>
+            <th>Do</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+    </table>
+    <table border="1" class="table">
+        <tr>
+            <th colspan="7">Abril</th>
+        </tr>
+        <tr>
+            <th>Lu</th>
+            <th>Ma</th>
+            <th>Mi</th>
+            <th>Ju</th>
+            <th>Vi</th>
+            <th>Sa</th>
+            <th>Do</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+    </table>
+    </br>
+    <table border="1" class="table">
+        <tr>
+            <th colspan="7">Pentiembre</th>
+        </tr>
+        <tr>
+            <th>Lu</th>
+            <th>Ma</th>
+            <th>Mi</th>
+            <th>Ju</th>
+            <th>Vi</th>
+            <th>Sa</th>
+            <th>Do</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+    </table>
+    <table border="1" class="table">
+        <tr>
+            <th colspan="7">Sextiembre</th>
+        </tr>
+        <tr>
+            <th>Lu</th>
+            <th>Ma</th>
+            <th>Mi</th>
+            <th>Ju</th>
+            <th>Vi</th>
+            <th>Sa</th>
+            <th>Do</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+    </table>
+    <table border="1" class="table">
+        <tr>
+            <th colspan="7">Septiembre</th>
+        </tr>
+        <tr>
+            <th>Lu</th>
+            <th>Ma</th>
+            <th>Mi</th>
+            <th>Ju</th>
+            <th>Vi</th>
+            <th>Sa</th>
+            <th>Do</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+    </table>
+    <table border="1" class="table">
+        <tr>
+            <th colspan="7">Octubre</th>
+        </tr>
+        <tr>
+            <th>Lu</th>
+            <th>Ma</th>
+            <th>Mi</th>
+            <th>Ju</th>
+            <th>Vi</th>
+            <th>Sa</th>
+            <th>Do</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+    </table>
+    </br>
+    <table border="1" class="table">
+        <tr>
+            <th colspan="7">Noviembre</th>
+        </tr>
+        <tr>
+            <th>Lu</th>
+            <th>Ma</th>
+            <th>Mi</th>
+            <th>Ju</th>
+            <th>Vi</th>
+            <th>Sa</th>
+            <th>Do</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+    </table>
+    <table border="1" class="table">
+        <tr>
+            <th colspan="7">Diciembre</th>
+        </tr>
+        <tr>
+            <th>Lu</th>
+            <th>Ma</th>
+            <th>Mi</th>
+            <th>Ju</th>
+            <th>Vi</th>
+            <th>Sa</th>
+            <th>Do</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+    </table>
+    <table border="1" class="table">
+        <tr>
+            <th colspan="7">Undiciembre</th>
+        </tr>
+        <tr>
+            <th>Lu</th>
+            <th>Ma</th>
+            <th>Mi</th>
+            <th>Ju</th>
+            <th>Vi</th>
+            <th>Sa</th>
+            <th>Do</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+    </table>
+    <table border="1" class="table">
+        <tr>
+            <th colspan="7">Dodeciembre</th>
+        </tr>
+        <tr>
+            <th>Lu</th>
+            <th>Ma</th>
+            <th>Mi</th>
+            <th>Ju</th>
+            <th>Vi</th>
+            <th>Sa</th>
+            <th>Do</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+    </table>
+    </br>
+    <table border="1" class="table">
+        <tr>
+            <th colspan="7">Tridiciembre</th>
+        </tr>
+        <tr>
+            <th>Lu</th>
+            <th>Ma</th>
+            <th>Mi</th>
+            <th>Ju</th>
+            <th>Vi</th>
+            <th>Sa</th>
+            <th>Do</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+    </table>
+    <table border="1" class="table buferembre">
+        <tr>
+            <th colspan="7">Buferembre</th>
+        </tr>
+        <tr>
+            <th>Lu</th>
+            <th>Ma</th>
+            <th>Mi</th>
+            <th>Ju</th>
+            <th>Vi</th>
+            <th>Sa</th>
+            <th>Do</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+    </table>
+    </div>
+    <h3>¿Por qué hemos hecho esto al calendario?</h3>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uZKUthKdKKY" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <div class="argumentos">
+        <h3>¿Cuál es el motivo de este cambio en los meses?</h3>
+        <ul>
+            <li>Todas las quincenas serán idénticas para la clase trabajadora, de tal forma que no existirán quincenas largas como en los meses de 31 días cuando las personas lidian mucho para llegar a fin de mes</li>
+            <li>Alineación con fenómenos astronómicos.</li>
+            <li>Ajustes históricos y científicos.</li>
+            <li>Facilitar comparaciones con otros calendarios.</li>
+        </ul>
+    </div>    
+    <script>
+        function convertirFecha() {
+            const fechaInput = document.getElementById("fecha");
+            const fechaSeleccionada = new Date(fechaInput.value);
+            fechaSeleccionada.setDate(fechaSeleccionada.getDate() + 1);
+            const dia = fechaSeleccionada.getDate();
+            const mes = fechaSeleccionada.getMonth();
+            const anio = fechaSeleccionada.getFullYear();
+
+            let resultado;
+
+            if (anio < 2024) {
+                        resultado = "Esta fecha es previa a la implementación del calendario equidializado";
+            } else {
+                const resultadoEquidializado = gregoriano2Equidializado(dia, mes, anio);
+                resultado = `Esta fecha es ${resultadoEquidializado[0]} ${resultadoEquidializado[1]} de ${resultadoEquidializado[2]} de ${resultadoEquidializado[3]}`;
+            }
+
+            document.getElementById("resultado").textContent = resultado;
+        }
+
+        function validarBisiesto(year) {
+            const a = year % 4;
+            const b = year % 100;
+            const c = year % 400;
+            return (a === 0 && b !== 0) || c === 0;
+        }
+
+        function gregoriano2Equidializado(dd, mm, aaaa) {
+            const dias = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+            const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Pentiembre', 'Sextiembre', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre', 'Undiciembre', 'Dodeciembre', 'Tridiciembre', 'Buferembre'];
+            const mes1 = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+            const mes2 = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+            if (mm === 0 && dd <= 28) {
+                const nombre = dias[dd % 7];
+                return [nombre, dd, 'Enero', aaaa+10000];
+            } else if (mm === 0 && dd > 28) {
+                dd = dd - 28;
+                const nombre = dias[dd % 7];
+                return [nombre, dd, 'Febrero', aaaa+10000];
+            } else if (mm > 0) {
+                const bis = validarBisiesto(aaaa);
+                let i = 0;
+                let cuenta = 0;
+                if (bis) {
+                    while (true) {
+                        cuenta = cuenta + mes2[i];
+                        i = i + 1;
+                        if (i === mm) {
+                            break;
+                        }
+                    }
+                cuenta = cuenta + dd;
+                } else {
+                    while (true) {
+                        cuenta = cuenta + mes1[i];
+                        i = i + 1;
+                        if (i === mm) {
+                            break;
+                        }
+                    }
+                cuenta = cuenta + dd;
+                }
+                const nuevoMes = meses[Math.floor(cuenta / 28)];
+                const nuevoDia = cuenta % 28;
+            // El siguiente if elimina el bug del día cero del mes, por ejemplo, el viejo 22 de Abril
+                if (nuevoDia === 0) {
+                    nuevoDia = 28;
+                    nuevoMes = meses[Math.floor(cuenta / 28) - 1];
+                }
+                const nombre = dias[nuevoDia%7];
+                return [nombre, nuevoDia, nuevoMes, aaaa+10000];
+            }
+        }
+    </script>
+    
 </body>
 </html>

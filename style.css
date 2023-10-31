@@ -1,17 +1,160 @@
+/* Estilo para el título */
 body {
-    background-color: purple;
-    margin: 0;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  h1 {
-    color: white;
-    font-size: 36px;
-  }
-  
+  background-color: #c0daf2c2;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  text-align: center;
+  font-size: 19px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo para el formulario */
+form {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 20px auto;
+  width: 300px;
+}
+
+/* Estilo para el botón */
+input[type="submit"] {
+  background-color: #1d89fd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0353a9
+}
+
+/* Estilo para el párrafo de fecha seleccionada */
+p{
+  text-align: center;
+  font-size: 18px;
+  margin: 20px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo para el campo de fecha */
+input[type="date"] {
+  padding: 10px;
+  width: 100%;
+}
+
+/* Cambio de color de fondo en foco del campo de fecha */
+input[type="date"]:focus {
+  background-color: #79c1b9b5;
+}
+
+/* Alineación de etiquetas y campos de entrada */
+label, input[type="date"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 400px; /* Ancho fijo de 400 píxeles */
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* El resto del CSS se mantiene igual */
+table, th, td {
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+th {
+  background-color: #bdcded;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+tr:nth-child(odd) {
+  background-color: #a9bee8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+tr:nth-child(even) {
+  background-color: #89a2d5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.table-container {
+  display: flex;
+  flex-wrap: wrap; /* Hace que las tablas pasen a la siguiente línea cuando no quepan en el ancho del contenedor */
+}
+
+.table {
+  border-collapse: collapse;
+  border: 1px solid #0b2a79ce;
+  margin: 10px;
+  margin-bottom: 20px; /* Espacio vertical entre las tablas */
+}
+
+.table.buferembre {
+  height: 40px; /* Altura más pequeña para "Buferembre" */
+}
+
+input[type="date"] {
+  font-family: Arial, Helvetica, sans-serif; /* Cambia la fuente según tus preferencias */
+  /* Otros estilos CSS, si es necesario */
+}
+
+/* Estilos para centrar el video */
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+.video-container iframe {
+  max-width: 200%;
+}
+
+/* Estilos para los argumentos */
+.argumentos {
+  text-align: left; /* Alineación del texto a la izquierda */
+  padding: 20px;
+}
+
+.argumentos h2 {
+  font-size: 24px;
+}
+
+.argumentos ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Estilos para el texto en las viñetas */
+.argumentos ul li {
+  font-size: 18px; /* Tamaño de fuente */
+  margin-bottom: 10px; /* Espacio entre elementos de la lista */
+  color: #333; /* Color de texto */
+  font-family: Arial, Helvetica, sans-serif;
+}
